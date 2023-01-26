@@ -1,0 +1,371 @@
+/* common css start */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+ol,
+ul,
+button {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.section_info h2 {
+    color: #02918b;
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 90.12px;
+}
+
+.section_info p {
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 41px;
+}
+
+.section_info b {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+/* common css end */
+/* nav css start */
+#nav {
+    background-color: #02918b;
+}
+
+#nav .container #main_nav ul li a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 25px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#nav .container #main_nav ul li:hover a {
+    color: #000;
+    background-color: #cfc91d;
+}
+
+#nav.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #02918b;
+    z-index: 99;
+    animation-name: menufix;
+    animation-duration: 1s;
+  }
+  
+  @keyframes menufix {
+    from {
+      top: -100px;
+    }
+  
+    to {
+      top: 0;
+    }
+  }
+/* nav css end */
+/* banner css start */
+#banner {
+    background: url(../img/banner.jpg);
+    height: 727px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    inset: 0;
+    opacity: .6;
+    z-index: -1;
+}
+
+#banner div h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#banner div h1 {
+    color: #fff;
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+
+#banner div p {
+    color: #fff;
+    font-size: 18px;
+}
+
+#banner div img {
+    display: block;
+    margin: 50px auto;
+}
+
+#banner div a {
+    color: #000;
+    background-color: #cfc91d;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 19px 43px;
+    transition: .5s;
+}
+
+#banner div a:hover{
+    color: #fff;
+    background: #02918b;
+}
+/* banner css end */
+/* about section start */
+#about {
+    padding: 95px 0;
+}
+
+#about .section_info {
+    width: 874px;
+    line-height: 41px;
+}
+
+#about .about_info div {
+    text-align: center;
+    margin-top: 80px;
+    padding: 60px;
+    border-right: 1px #7e8287 solid;
+}
+
+#about .about_info div h4 {
+    color: #7e8287;
+    font-size: 16px;
+    margin: 17.5px 0;
+    font-weight: 800;
+}
+
+#about .about_info div p {
+    color: #7e8287;
+    font-size: 11px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+#about .about_info div i {
+    color: #02918b;
+    font-size: 30px;
+}
+
+#about .about_info div:last-child {
+    border: none;
+}
+
+/* about section end */
+/* services section start */
+#services {
+    background: url(../img/services.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+}
+
+#services .service_item {
+    padding-bottom: 50px;
+    padding-right: 125px;
+}
+
+#services .service_info {
+    margin-top: 50px;
+}
+
+#services .row .service_item h4 {
+    color: #7e8287;
+    font-size: 16px;
+    margin: 17.5px 0;
+    font-weight: 800;
+}
+
+#services .row .service_item p {
+    color: #7e8287;
+    font-size: 11px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+#services .row .service_item i {
+    color: #02918b;
+    font-size: 30px;
+}
+
+/* services section end */
+/* my work section start */
+#my_work .section_info {
+    padding: 80px 0;
+}
+
+#my_work .work_item {
+    position: relative;
+}
+
+#my_work .work_item img {
+    width: 100%;
+}
+
+#my_work .work_item .overlay {
+    color: #fff;
+    background-color: rgba(2, 145, 139, 0.85);
+    text-align: center;
+    padding: 0 37px;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    bottom: 20px;
+    left: 27px;
+    transform: scale(0);
+    transition: .6s;
+}
+
+#my_work .work_item:hover .overlay {
+    transform: scale(1);
+}
+
+#my_work .work_item:hover .overlay h4 {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 23px;
+}
+
+#my_work .work_item:hover .overlay p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+/* my work section end */
+/* CONTACT ME section start */
+
+#contact_me .section_info {
+    padding: 80px 0;
+}
+
+#contact_me .contact_form {
+    background: #0a0a0b;
+}
+
+#contact_me .contact_form input,
+#contact_me .contact_form textarea {
+    color: #898989;
+    background: #0a0a0b;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #898989;
+}
+
+#contact_me .contact_form textarea {
+    resize: none;
+}
+
+#contact_me .contact_form input::placeholder,
+#contact_me .contact_form textarea::placeholder {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#contact_me .contact_form input:focus,
+#contact_me .contact_form textarea:focus {
+    outline: 0;
+    border-bottom: 1px solid #02918b;
+}
+
+#contact_me .contact_form button {
+    color: #0b1016;
+    background: #cfc91d;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 20px 65px;
+    margin: 70px 0;
+    transition: .5s;
+}
+#contact_me .contact_form button:hover{
+    color: #fff;
+    background: #02918b;
+}
+
+/* CONTACT ME section end */
+/* footer css start */
+footer {
+    padding: 34px 0 27px 0;
+}
+
+footer p {
+    color: #7e8287;
+    cursor: pointer;
+}
+
+footer button{
+   border:none !important;
+}
+/* footer css end */
+/* back to top css start */
+#back_to_top {
+    color: #000;
+    background: #cfc91d;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+    position: fixed;
+    bottom: 0px;
+    right: 40px;
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  #back_to_top.active {
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  #back_to_top:hover {
+    color: #fff;
+    background: #02918b;
+  }
+  
+  #back_to_top i {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+  }
+  
+  /* back to top css end */
